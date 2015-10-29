@@ -2,12 +2,42 @@
   <UIDEF>
     <file name="XML_INIT" path="xml\init.xml"  />
   </UIDEF>
+  
   <LAYOUT>
     <file name="XML_MAINWND" path="xml\dlg_main.xml"  />
-      </LAYOUT>
+    <file name="XML_DETAILWND" path="xml\dlg_detail.xml"  />
+    <file name="XML_BLACKLISTWND" path="xml\dlg_blacklist.xml"  />
+  </LAYOUT>
+  
   <IMG>
-        <file name="traymenu_icons" path="image\traymenu_icons.png"  />
-          </IMG>
+    <file name="traymenu_icons" path="image\traymenu_icons.png"  />
+    <file name="png_vscroll" path="image\vscrollbar.png"  />
+    
+    <!-- logo-->
+    <file name="img_logo" path="image\logo.png" />
+    <!-- 背景-->
+    <file name="img_bk_01" path="image\bg_01.png" />
+    <file name="img_bk_02" path="image\bg_02.png" />
+    <file name="img_descripte_01" path="image\descripte_img01.png" />
+    <file name="img_descripte_02" path="image\descripte_img02.png" />
+
+    <file name="img_close" path="image\close.png" />
+    <file name="img_min" path="image\min.png" />
+    <file name="img_set" path="image\set.png" />
+    <file name="img_fankui" path="image\fankui.png" />
+
+    <file name="img_net_porn" path="image\net_porn.png" />
+    <file name="img_net_trush" path="image\net_trush.png" />
+    <file name="img_net_fish" path="image\net_fish.png" />
+
+    <file name="img_switch_back"	path="image\kaiguan_bg.png"  />
+    <file name="img_switch_force"	path="image\kaiguan_button.png"  />
+    <file name="img_chakan" path="image\chakan_button.png" />
+
+    <file name="img_wangye" path="image\wangye.png" />
+
+  </IMG>
+  
   <ICON>
     <file name="ICON_LOGO"  path="image\soui.ico"    />
   </ICON>

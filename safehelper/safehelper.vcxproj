@@ -98,12 +98,26 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building SoUI Resource</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
     </CustomBuild>
-    <None Include="uires\xml\dlg_main.xml" />
-    <None Include="uires\xml\init.xml" />
+    <None Include="uires\xml\dlg_blacklist.xml" />
+    <None Include="uires\xml\dlg_detail.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uires\xml\dlg_main.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uires\xml\init.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="uires\xml\menu_tray.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BlacklistDlg.cpp" />
+    <ClCompile Include="DetailInfoDlg.cpp" />
+    <ClCompile Include="extend_ui\SNumWall.cpp" />
+    <ClCompile Include="extend_ui\SSwitch.cpp" />
+    <ClCompile Include="extend_ui\STextButton.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="safehelper.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -116,6 +130,12 @@
     <ResourceCompile Include="safehelper.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlacklistDlg.h" />
+    <ClInclude Include="DetailInfoDlg.h" />
+    <ClInclude Include="extend_ui\SNumWall.h" />
+    <ClInclude Include="extend_ui\SSwitch.h" />
+    <ClInclude Include="extend_ui\STextButton.h" />
+    <ClInclude Include="extend_ui\SVscrollbar.h" />
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />

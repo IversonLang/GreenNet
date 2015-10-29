@@ -1,19 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UIDEF>
+  <!--
   <font face="宋体" size="15"/>
-
+  -->
+  <font face="微软雅黑" size="15"/>
+  
   <string>
-    <title value="绿网"/>
-    <ver value="1.0"/>
+    <title value="绿网"/>    
+    <text_ver value="版本号:" />
+    <ver value="1.0.0.1"/>
+    <searchtext value="查看"/>
+    <checknew value="检查更新"/>
+
+    <text_count value="拦截不良网站个数" />
+    <text_porn value="拦截色情网站" />
+    <text_trush value="拦截垃圾网站" />
+    <text_fish value="拦截钓鱼网站" />
+
+    <text_blacklist value="黑名单网站共" />
+    
   </string>
 
   <skin>
-	<imglist name="skin_traymenu_icons"	src="img:traymenu_icons" states="9"/>
-	  </skin>
+	  <imglist name="skin_traymenu_icons"	src="img:traymenu_icons" states="9"/>
+    <vscrollbar name="skin_vscrollbar" src="img:png_vscroll" states="3" margin="4"/>
+    
+    <imglist name="skin_logo"	src="img:img_logo"/>
+    <imglist name="skin_bk_01" src="img:img_bk_01" />
+    <imglist name="skin_bk_02" src="img:img_bk_02" />
+    <imglist name="skin_descripte_01" src="img:img_descripte_01" />
+    <imglist name="skin_descripte_02" src="img:img_descripte_02" />
+
+
+    <imglist name="skin_close"	src="img:img_close" states="3"/>
+    <imglist name="skin_min"	src="img:img_min" states="3"/>
+    <imglist name="skin_set"	src="img:img_set" states="3"/>
+    <imglist name="skin_fankui"	src="img:img_fankui" states="3"/>
+
+    <imglist name="skin_net_porn"	src="img:img_net_porn" states="3"/>
+    <imglist name="skin_net_trush"	src="img:img_net_trush" states="3"/>
+    <imglist name="skin_net_fish"	src="img:img_net_fish" states="3"/>
+
+    <imglist name="skin_switch_back"	src="img:img_switch_back" states="2" />
+    <imglist name="skin_switch_force"	src="img:img_switch_force" states="3" />
+    <imglist name="skin_chakan" src="img:img_chakan" states="3" />
+
+    <imglist name="skin_wangye" src="img:img_wangye" />
+    
+	</skin>
 
   <style>
     <class name="normalbtn" font="" colorText="#385e8b" colorTextDisable="#91a7c0" textMode="25" cursor="hand" margin-x="0"/>
     <class name="cls_btn_weblink" cursor="hand" colorText="#1e78d5" colorTextHover="#1e78d5" font="italic:1" fontHover="underline:1,italic:1" />
+  
+    <!-- logo字体样式 -->
+    <class name="cls_text_logo" colorText="#ffffff" font="face:微软雅黑,size:12"/>
+
+    <!-- 版本提示字体样式-->
+    <class name="cls_text_bottom" colorText="#333333" font="face:微软雅黑,size:12"/>
+
+    <!-- 拦截字体样式-->
+    <class name="cls_text_headoff" colorText="#333333" font="face:微软雅黑,size:18"/>
   </style>
 
   <objattr>

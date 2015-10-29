@@ -1,16 +1,52 @@
-﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="400"  margin="20,5,5,5"  resizable="1" 
-toolWindow="1"
+﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="770" height="490"  margin="20,5,5,5"  resizable="0" 
+toolWindow="0"
 translucent="1" 
 >
-  <root skin="_skin.sys.wnd.bkgnd" cache="1">
-    <caption pos="0,0,-0,30" show="1" font="adding:0">
+  <root skin="skin_bk_01" cache="1">
+    <caption pos="0,0,-0,260" show="1" font="adding:0">
+      <!--
       <icon pos="10,8" src="ICON_LOGO:16"/>
-      <text pos="29,9">%title%</text>
-      <imgbtn name="btn_close" skin="_skin.sys.btn.close"    pos="-45,0" tip="close" animate="1"/>
-      <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-83,0" animate="1" />
+      -->
+      <img pos="5,5,-5,-5" skin="skin_descripte_01"></img>
+      
+      <img pos="13,13" skin="skin_logo"></img>
+      <text pos="36,13" class="cls_text_logo">%title%</text>
+      <imgbtn name="btn_fankui" skin="skin_fankui" pos="653,11" />
+      <imgbtn name="btn_set" skin="skin_set" pos="[3,11" />
+      <imgbtn name="btn_min" skin="skin_min" pos="[3,11" />
+      <imgbtn name="btn_close" skin="skin_close" pos="[3,11" />
+
+      <text pos="590,80" colorText="#ffffff" font="face:微软雅黑,size:14">%text_count%</text>
+      <!-- 数字墙 -->
+      <numwall pos="590,110,-60,135"></numwall>
     </caption>
-        <window pos="5,[2,-5,-5">
-      <text pos="|0,|0" offset="-0.5,-0.5">这是一个由SOUI向导生成的APP框架</text>
+
+    <window pos="0,190,-0,-40">
+      <img  name="img_porn" skin="skin_net_porn" pos="84,0" />
+      <img  name="img_trush" skin="skin_net_trush" pos="324,0" />
+      <img  name="img_fish" skin="skin_net_fish" pos="562,0" />
+      <text pos="72,150"  class="cls_text_headoff">%text_porn%</text>
+      <switch name="switch_porn" pos="[5,152" skin="skin_switch_back" skinforce="skin_switch_force" open="0"/>
+      <text pos="316,150"  class="cls_text_headoff">%text_trush%</text>
+      <switch name="switch_trush" pos="[5,152" skin="skin_switch_back" skinforce="skin_switch_force" open="0"/>
+      <text pos="526,150"  class="cls_text_headoff">%text_fish%</text>
+      <switch name="switch_fish" pos="[5,152" skin="skin_switch_back" skinforce="skin_switch_force" open="0"/>
+
+      <imgbtn  name="chakan_porn" skin="skin_chakan" pos="102,180" />
+      <imgbtn  name="chakan_trush" skin="skin_chakan" pos="341,180" />
+      <imgbtn  name="chakan_fish" skin="skin_chakan" pos="-191,180" />
+      
     </window>
-      </root>
+        
+    <window pos="0,-40,-0,-0">
+      <text pos="24,|0" offset="-0,-0.7" class="cls_text_bottom">%text_blacklist%</text>
+      <text pos="[4,|0" offset="-0,-0.7" colorText="#000000" font="face:微软雅黑,size:15">17</text>
+      <text pos="[4,|0" offset="-0,-0.7" class="cls_text_bottom">个,</text>
+      <textbtn name="search" pos="[5,|0" offset="-0,-0.7" focusable="0" colorText="#0086ff" font="face:微软雅黑,size:12">%searchtext%</textbtn>
+      
+      <text pos="-161,|0" offset="-0,-0.7" class="cls_text_bottom">%text_ver%</text>
+      <text pos="[2,|0" offset="-0,-0.7" class="cls_text_bottom">%ver%</text>
+      <textbtn name="checknew" pos="[8,|0" offset="-0,-0.7" focusable="0" colorText="#0086ff" font="face:微软雅黑,size:12">%checknew%</textbtn>
+    </window>
+  </root>
 </SOUI>

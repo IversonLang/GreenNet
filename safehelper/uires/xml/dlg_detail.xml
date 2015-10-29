@@ -1,0 +1,27 @@
+﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="770" height="490"  margin="20,5,5,5"  resizable="0" 
+toolWindow="1"
+translucent="1" 
+>
+  <root skin="skin_bk_02" cache="1">
+    <caption pos="0,0,-0,45" show="1" font="adding:0">      
+      <img pos="13,13" skin="skin_logo"></img>
+      <text pos="36,13" class="cls_text_logo">%title%</text>
+      <!--
+      <imgbtn name="btn_detail_min" skin="skin_min" pos="-65,11" />
+      -->
+      <imgbtn name="btn_detail_close" skin="skin_close" pos="-40,11" />
+    </caption>
+    <text name="text_content" pos="10,53" class="cls_text_bottom"></text>    
+    <window pos="0,85,-0,-5">
+      <listview pos="5,[0,-5,-5" name="lv_test_fix" dividerSize="0"  vscrollBar="1" sbSkin="skin_vscrollbar">
+        <template itemHeight="35" colorHover="#eeeeee" colorSelected="#dddddd" >
+
+          <img pos="15,|0" offset="-0,-0.5" skin="skin_wangye"></img>
+          <text pos="[5,|0" offset="-0,-0.5" colorText="#333333">www.baidu.com</text>
+          <textbtn name="textbtn1" pos="-150,|0" offset="-0,-0.5" focusable="0" colorText="#0086ff" font="face:微软雅黑,size:12"></textbtn>
+          <textbtn name="textbtn2" pos="[20,|0" offset="-0,-0.5" focusable="0"  colorText="#0086ff" font="face:微软雅黑,size:12"></textbtn>
+        </template>
+      </listview>
+    </window>
+  </root>
+</SOUI>

@@ -17,6 +17,9 @@
       <UniqueIdentifier>{45ad1827-5ab0-4989-a0d4-ab8f6ddaf9dd}</UniqueIdentifier>
       <Extensions>idx;xml;png;gif;jpg;ico;lua;bmp</Extensions>
     </Filter>
+    <Filter Include="extend_ui">
+      <UniqueIdentifier>{caa154f4-a046-4212-89b8-663de8802579}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />
@@ -38,6 +41,12 @@
     <None Include="uires\image\traymenu_icons.png">
       <Filter>SoUI Resouece</Filter>
     </None>
+    <None Include="uires\xml\dlg_detail.xml">
+      <Filter>SoUI Resouece</Filter>
+    </None>
+    <None Include="uires\xml\dlg_blacklist.xml">
+      <Filter>SoUI Resouece</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="safehelper.cpp">
@@ -50,6 +59,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="trayicon\SShellNotifyIcon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extend_ui\SSwitch.cpp">
+      <Filter>extend_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="extend_ui\SNumWall.cpp">
+      <Filter>extend_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="DetailInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extend_ui\STextButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlacklistDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -69,6 +93,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="trayicon\SShellNotifyIcon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\SSwitch.h">
+      <Filter>extend_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\SNumWall.h">
+      <Filter>extend_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\STextButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlacklistDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\SVscrollbar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

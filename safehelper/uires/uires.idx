@@ -20,6 +20,8 @@
     <file name="img_bk_02" path="image\bg_02.png" />
     <file name="img_descripte_01" path="image\descripte_img01.png" />
     <file name="img_descripte_02" path="image\descripte_img02.png" />
+    <file name="img_descripte_03" path="image\descripte_img03.png" />
+    <file name="img_descripte_04" path="image\descripte_img04.png" />
 
     <file name="img_close" path="image\close.png" />
     <file name="img_min" path="image\min.png" />

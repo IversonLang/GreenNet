@@ -30,6 +30,8 @@
     <imglist name="skin_bk_02" src="img:img_bk_02" />
     <imglist name="skin_descripte_01" src="img:img_descripte_01" />
     <imglist name="skin_descripte_02" src="img:img_descripte_02" />
+    <imglist name="skin_descripte_03" src="img:img_descripte_03" />
+    <imglist name="skin_descripte_04" src="img:img_descripte_04" />
 
 
     <imglist name="skin_close"	src="img:img_close" states="3"/>

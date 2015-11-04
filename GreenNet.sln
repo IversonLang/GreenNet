@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "safehelper", "safehelper\safehelper.vcxproj", "{5CE48DCF-9D7E-4470-898C-B5F1AAA6707E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{BA74EBDF-CB83-44D0-834F-0918C38E98A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uninstall", "uninstall\uninstall.vcxproj", "{60B08A4E-E461-48DE-9DB1-7DA1CB438CE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +17,14 @@ Global
 		{5CE48DCF-9D7E-4470-898C-B5F1AAA6707E}.Debug|Win32.Build.0 = Debug|Win32
 		{5CE48DCF-9D7E-4470-898C-B5F1AAA6707E}.Release|Win32.ActiveCfg = Release|Win32
 		{5CE48DCF-9D7E-4470-898C-B5F1AAA6707E}.Release|Win32.Build.0 = Release|Win32
+		{BA74EBDF-CB83-44D0-834F-0918C38E98A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA74EBDF-CB83-44D0-834F-0918C38E98A6}.Debug|Win32.Build.0 = Debug|Win32
+		{BA74EBDF-CB83-44D0-834F-0918C38E98A6}.Release|Win32.ActiveCfg = Release|Win32
+		{BA74EBDF-CB83-44D0-834F-0918C38E98A6}.Release|Win32.Build.0 = Release|Win32
+		{60B08A4E-E461-48DE-9DB1-7DA1CB438CE2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60B08A4E-E461-48DE-9DB1-7DA1CB438CE2}.Debug|Win32.Build.0 = Debug|Win32
+		{60B08A4E-E461-48DE-9DB1-7DA1CB438CE2}.Release|Win32.ActiveCfg = Release|Win32
+		{60B08A4E-E461-48DE-9DB1-7DA1CB438CE2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

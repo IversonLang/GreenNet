@@ -7,7 +7,7 @@ translucent="1"
       <!--
       <icon pos="10,8" src="ICON_LOGO:16"/>
       -->
-      <img pos="5,5,-5,-5" skin="skin_descripte_01"></img>
+      <img name="skin_descripte" pos="5,5,-5,-5" skin="skin_descripte_01"></img>
       
       <img pos="13,13" skin="skin_logo"></img>
       <text pos="36,13" class="cls_text_logo">%title%</text>

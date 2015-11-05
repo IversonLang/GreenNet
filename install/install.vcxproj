@@ -36,13 +36,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IntDir>$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>..\obj\debug\install</IntDir>
+    <OutDir>..\bin\</OutDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IntDir>$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>..\obj\release\install\</IntDir>
+    <OutDir>..\bin\</OutDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -95,11 +95,18 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building SoUI Resource</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
     </CustomBuild>
-    <None Include="uires\xml\dlg_main.xml" />
-    <None Include="uires\xml\init.xml" />
+    <None Include="uires\xml\dlg_main.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uires\xml\init.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="extend_ui\SAnimateImgWndEx.cpp" />
+    <ClCompile Include="extend_ui\SEdit2.cpp" />
     <ClCompile Include="install.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -111,6 +118,9 @@
     <ResourceCompile Include="install.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="extend_ui\FileHelper.h" />
+    <ClInclude Include="extend_ui\SAnimateImgWndEx.h" />
+    <ClInclude Include="extend_ui\SEdit2.h" />
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />

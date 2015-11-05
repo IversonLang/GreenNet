@@ -4,10 +4,16 @@
   </UIDEF>
   <LAYOUT>
     <file name="XML_MAINWND" path="xml\dlg_main.xml"  />
-      </LAYOUT>
+  </LAYOUT>
   <IMG>
-          </IMG>
+    <file name="bg_uninstall"  path="image\bg_uninstall.png"    />
+    <file name="close_install"  path="image\delete.png"    />
+    <file name="bg_02"  path="image\image02.png"    />
+    <file name="bg_03"  path="image\image03.png"    />
+    <file name="bg_04"  path="image\image04.png"    />
+    <file name="tiyan"  path="image\tiyan.png"    />
+  </IMG>
   <ICON>
     <file name="ICON_LOGO"  path="image\soui.ico"    />
   </ICON>
-    </resource>
+</resource>

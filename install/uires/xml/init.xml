@@ -1,19 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UIDEF>
-  <font face="宋体" size="15"/>
+  <font face="微软雅黑" size="15"/>
 
   <string>
-    <title value=""/>
-    <ver value="1.0"/>
+    <title value="绿网"/>
+    <install_loc value="安装位置："/>
+    
   </string>
 
   <skin>
-	<imglist name="skin_traymenu_icons"	src="img:traymenu_icons" states="9"/>
-	  </skin>
+    <imglist name="skin_traymenu_icons"	src="img:traymenu_icons" states="9"/>
+    <imglist name="skin_bg_install"	src="img:bg_install" />
+    <imglist name="skin_close_install"	src="img:close_install" states="3"/>
+    <imglist name="skin_btn_install"	src="img:btn_install" states="3"/>
+    <imglist name="skin_bg05_install"	src="img:bg05_install"/>
+    <imglist name="skin_bg04_install"	src="img:bg04_install"/>
+    <imglist name="skin_input_install"	src="img:input_install"/>
+    <imglist name="skin_view_install"	src="img:view_install" states="3"/>
+    <imglist name="skin_donghua_install"	src="img:donghua_install" states="11"/>
+
+    <imglist name="skin_yuan_install"	src="img:yuan_install" />
+    <imglist name="skin_logo2_install"	src="img:logo2_install" />
+
+    <imglist name="skin_install_finish"	src="img:install_finish" states="3" />
+    <imglist name="skin_tiyan_button"	src="img:tiyan_button" states="3" />
+    
+  </skin>
 
   <style>
     <class name="normalbtn" font="" colorText="#385e8b" colorTextDisable="#91a7c0" textMode="25" cursor="hand" margin-x="0"/>
     <class name="cls_btn_weblink" cursor="hand" colorText="#1e78d5" colorTextHover="#1e78d5" font="italic:1" fontHover="underline:1,italic:1" />
+
+    <!-- logo字体样式 -->
+    <class name="cls_text_logo" colorText="#ffffff" font="face:微软雅黑,size:12"/>
+    <!-- 版本提示字体样式-->
+    <class name="cls_text_bottom" colorText="#333333" font="face:微软雅黑,size:13"/>
+    <class name="cls_text_percent" colorText="#ffffff" font="face:微软雅黑,size:25,bold:1"/>
   </style>
 
   <objattr>

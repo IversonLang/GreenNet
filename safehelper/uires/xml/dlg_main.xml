@@ -8,8 +8,11 @@ translucent="1"
       <icon pos="10,8" src="ICON_LOGO:16"/>
       -->
       <img name="skin_descripte" pos="5,5,-5,-5" skin="skin_descripte_01"></img>
-      
+
+      <icon pos="13,13" src="ICON_LOGO:16"/>
+      <!--
       <img pos="13,13" skin="skin_logo"></img>
+      -->
       <text pos="36,13" class="cls_text_logo">%title%</text>
       <imgbtn name="btn_fankui" skin="skin_fankui" pos="653,11" />
       <imgbtn name="btn_set" skin="skin_set" pos="[3,11" />

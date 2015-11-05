@@ -43,6 +43,12 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="extend_ui\SEdit2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extend_ui\SAnimateImgWndEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="install.rc">
@@ -57,6 +63,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\SEdit2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\FileHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extend_ui\SAnimateImgWndEx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

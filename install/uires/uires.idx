@@ -4,10 +4,22 @@
   </UIDEF>
   <LAYOUT>
     <file name="XML_MAINWND" path="xml\dlg_main.xml"  />
-      </LAYOUT>
+  </LAYOUT>
   <IMG>
-          </IMG>
+    <file name="bg_install"  path="image\bg_install.png"    />
+    <file name="close_install"  path="image\delete.png"    />
+    <file name="btn_install"  path="image\install_button.png"    />
+    <file name="bg05_install"  path="image\image05.png"    />
+    <file name="bg04_install"  path="image\image04.png"    />
+    <file name="input_install"  path="image\input.png"    />
+    <file name="view_install"  path="image\view.png"    />
+    <file name="donghua_install"  path="image\donghua.png"    />
+    <file name="yuan_install"  path="image\yuan.png"    />
+    <file name="logo2_install"  path="image\logo2.png"    />
+    <file name="install_finish"  path="image\install_finish.png"    />
+    <file name="tiyan_button"  path="image\tiyan_button.png"    />
+  </IMG>
   <ICON>
-    <file name="ICON_LOGO"  path="image\soui.ico"    />
+    <file name="ICON_LOGO"  path="image\logo.ico"    />    
   </ICON>
-    </resource>
+</resource>

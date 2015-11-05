@@ -1,16 +1,46 @@
-﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="400"  margin="20,5,5,5"  resizable="1" 
+﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="374"  margin="20,5,5,5"  resizable="0"
 appWnd="1"
-translucent="1" 
+translucent="1"
 >
-  <root skin="_skin.sys.wnd.bkgnd" cache="1">
-    <caption pos="0,0,-0,30" show="1" font="adding:0">
-      <icon pos="10,8" src="ICON_LOGO:16"/>
-      <text pos="29,9">%title%</text>
-      <imgbtn name="btn_close" skin="_skin.sys.btn.close"    pos="-45,0" tip="close" animate="1"/>
-      <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-83,0" animate="1" />
-    </caption>
-        <window pos="5,[2,-5,-5">
-      <text pos="|0,|0" offset="-0.5,-0.5">这是一个由SOUI向导生成的APP框架</text>
-    </window>
-      </root>
+  <root skin="skin_bg_uninstall" cache="1">
+    <tabctrl name="tab_main" pos="5,5,-5,-5" show="1" curSel="0" tabHeight="0" >
+      <page title="welcom">
+        <caption pos="0,0,-0,329" show="1">
+          <img name="bg1" pos="0,0,-0,-0" skin="skin_bg_03"></img>
+          <icon pos="13,8" src="ICON_LOGO:16"/>
+          <text pos="36,8" class="cls_text_logo">%title%</text>
+          <imgbtn name="btn_close" skin="skin_close_install"    pos="-30,2" tip="close"/>
+          <imgbtn name="btn_tiyan" skin="skin_tiyan" pos="|0,|0" offset="-0.5,2.2"/>
+        </caption>
+        <window pos="0,[0,-0,-0">
+          <textbtn pos="|0,|0" offset="4.8,-0.5" name="uninstall" focusable="0" colorText="#333333" font="face:微软雅黑,size:12">%uninstall%</textbtn>
+        </window>
+
+      </page>
+      <page title="uninstall">
+        <caption pos="0,0,-0,329" show="1">
+          <img name="bg1" pos="0,0,-0,-0" skin="skin_bg_02"></img>
+          <icon pos="13,8" src="ICON_LOGO:16"/>
+          <text pos="36,8" class="cls_text_logo">%title%</text>
+          <imgbtn name="btn_close" skin="skin_close_install"    pos="-30,2" tip="close"/>
+          <progressex name="prog_test" pos="0,-5,-0,-0" font="adding:-8" value="0" min="0" max="100" showPercent="0"/>
+        </caption>
+        <window pos="0,[0,-0,-0">
+          <textbtn pos="|0,|0" offset="4,-0.5" focusable="0" colorText="#333333" font="face:微软雅黑,size:12">%uninstall2%</textbtn>
+        </window>        
+      </page>
+      <page title="uninstall_over">
+        <caption pos="0,0,-0,329" show="1">
+          <img name="bg1" pos="0,0,-0,-0" skin="skin_bg_04"></img>
+          <icon pos="13,8" src="ICON_LOGO:16"/>
+          <text pos="36,8" class="cls_text_logo">%title%</text>
+          <imgbtn name="btn_close" skin="skin_close_install"    pos="-30,2" tip="close"/>
+        </caption>
+        <window pos="0,[0,-0,-0">
+          <textbtn name="btn_close" pos="|0,|0" offset="10.5,-0.5" focusable="0" colorText="#333333" font="face:微软雅黑,size:12">%uninstallover%</textbtn>
+        </window>
+
+      </page>
+    </tabctrl>
+  </root>
 </SOUI>

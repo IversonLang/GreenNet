@@ -2,17 +2,17 @@
   <UIDEF>
     <file name="XML_INIT" path="xml\init.xml"  />
   </UIDEF>
-  
+
   <LAYOUT>
     <file name="XML_MAINWND" path="xml\dlg_main.xml"  />
     <file name="XML_DETAILWND" path="xml\dlg_detail.xml"  />
     <file name="XML_BLACKLISTWND" path="xml\dlg_blacklist.xml"  />
   </LAYOUT>
-  
+
   <IMG>
     <file name="traymenu_icons" path="image\traymenu_icons.png"  />
     <file name="png_vscroll" path="image\vscrollbar.png"  />
-    
+
     <!-- logo-->
     <file name="img_logo" path="image\logo.png" />
     <!-- 背景-->
@@ -39,11 +39,11 @@
     <file name="img_wangye" path="image\wangye.png" />
 
   </IMG>
-  
+
   <ICON>
-    <file name="ICON_LOGO"  path="image\soui.ico"    />
+    <file name="ICON_LOGO"  path="image\logo.ico"    />
   </ICON>
-      <SMENU>
+  <SMENU>
     <file name="menu_tray" path="xml\menu_tray.xml"  />
   </SMENU>
-  </resource>
+</resource>

@@ -36,13 +36,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IntDir>$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>..\obj\debug\uninstall</IntDir>
+    <OutDir>..\bin\</OutDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IntDir>$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>..\obj\release\uninstall\</IntDir>
+    <OutDir>..\bin\</OutDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -100,6 +100,8 @@
     <None Include="uires\xml\init.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="extend_ui\SProgressEx.cpp" />
+    <ClCompile Include="extend_ui\STextButton.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -111,6 +113,8 @@
     <ResourceCompile Include="uninstall.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="extend_ui\SProgressEx.h" />
+    <ClInclude Include="extend_ui\STextButton.h" />
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />

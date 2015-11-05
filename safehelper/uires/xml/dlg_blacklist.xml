@@ -4,7 +4,7 @@ translucent="1"
 >
   <root skin="skin_bk_02" cache="1">
     <caption pos="0,0,-0,45" show="1" font="adding:0">
-      <img pos="13,13" skin="skin_logo"></img>
+      <icon pos="13,13" src="ICON_LOGO:16"/>
       <text pos="36,13" class="cls_text_logo">%title%</text>
       <!--
       <imgbtn name="btn_detail_min" skin="skin_min" pos="-65,11" />

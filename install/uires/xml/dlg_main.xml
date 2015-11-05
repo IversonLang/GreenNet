@@ -1,16 +1,80 @@
-﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="400"  margin="20,5,5,5"  resizable="1" 
+﻿<SOUI name="mainWindow" title="%title%" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="598" height="447"  margin="20,5,5,5"  resizable="0"
 appWnd="1"
-translucent="1" 
+translucent="1"
 >
-  <root skin="_skin.sys.wnd.bkgnd" cache="1">
-    <caption pos="0,0,-0,30" show="1" font="adding:0">
-      <icon pos="10,8" src="ICON_LOGO:16"/>
-      <text pos="29,9">%title%</text>
-      <imgbtn name="btn_close" skin="_skin.sys.btn.close"    pos="-45,0" tip="close" animate="1"/>
-      <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-83,0" animate="1" />
+  <root cache="1">
+    <!--
+    <caption pos="0,0,-0,285" show="1" font="adding:0">
+      <img name="skin_bg" pos="5,5,-5,-5" skin="skin_bg05_install"></img>
+      <icon pos="13,13" src="ICON_LOGO:16"/>
+      <text pos="36,13" class="cls_text_logo">%title%</text>
+      <imgbtn name="btn_close" skin="skin_close_install"    pos="-35,7" tip="close"/>
+
+      <imgbtn name="btn_install" skin="skin_btn_install" pos="170,-100" />
+            
     </caption>
-        <window pos="5,[2,-5,-5">
-      <text pos="|0,|0" offset="-0.5,-0.5">这是一个由SOUI向导生成的APP框架</text>
+    <window pos="0,[2,-5,-5">
+      <text pos="25,30" class="cls_text_bottom">%install_loc%</text>
+      <edit2 pos="25,55,-100,91" font="face:微软雅黑" name="edit_dir" skin="skin_input_install" inset="5,0,5,0" cueText=""/>
+      <imgbtn name="view_install" skin="skin_view_install" pos="[5,55" />
     </window>
-      </root>
+    -->
+
+    <caption pos="0,0,-0,-0" show="1">
+      <tabctrl name="tab_main" pos="0,0,-0,-0" show="1" curSel="0" tabHeight="0" >
+        <page title="welcom">
+          <img name="bg1" pos="0,0,-0,-0" skin="skin_bg_install"></img>
+          <caption pos="0,0,-0,285">
+            <img name="skin_bg" pos="5,5,-5,-5" skin="skin_bg05_install"></img>
+            <icon pos="13,13" src="ICON_LOGO:16"/>
+            <text pos="36,13" class="cls_text_logo">%title%</text>
+            <imgbtn name="btn_close" skin="skin_close_install"    pos="-35,7" tip="close"/>
+            <imgbtn name="btn_install" skin="skin_btn_install" pos="170,-100" />
+          </caption>
+          <window pos="0,[2,-5,-5">
+            <text pos="25,30" class="cls_text_bottom">%install_loc%</text>
+            <edit2 pos="25,55,-100,91" font="face:微软雅黑" name="edit_dir" skin="skin_input_install" inset="5,0,5,0" cueText=""/>
+            <imgbtn name="view_install" skin="skin_view_install" pos="[5,55" />
+            <check pos="25,110" class="cls_text_bottom" checked="1">宝贝管家</check>
+            <check pos="[35,110" class="cls_text_bottom" checked="1">59游戏盒</check>
+            <check pos="[35,110" class="cls_text_bottom" checked="1">天音酷播</check>
+            <check pos="[35,110" class="cls_text_bottom" checked="1">2345网址导航</check>
+            <check pos="[35,110" class="cls_text_bottom" checked="0">传奇霸业</check>
+          </window>
+        </page>
+        <page title="install">
+          <caption pos="0,0,-0,-0">
+            <img pos="|0,|0" offset="-0.5,-0.5" skin="skin_yuan_install"/>
+            <img pos="|0,|0" offset="-0.5,-0.65" skin="skin_logo2_install"/>
+            <animateimgex pos="|0,|0" offset="-0.5,-0.5" skin="skin_donghua_install"/>
+            
+            <caption pos="0,0,-0,-0">
+              <text pos="|0,-210" offset="-0.5,1" name="percent_text" class="cls_text_percent"></text>
+            </caption>
+
+          </caption>
+        </page>
+        <page title="install_over">
+          <img name="bg1" pos="0,0,-0,-0" skin="skin_bg_install"></img>
+          <caption pos="0,0,-0,280">
+            <img name="skin_bg_04" pos="5,5,-5,-5" skin="skin_bg04_install"></img>
+            <icon pos="13,13" src="ICON_LOGO:16"/>
+            <text pos="36,13" class="cls_text_logo">%title%</text>
+            <imgbtn name="btn_close" skin="skin_close_install"   pos="-35,7" tip="close"/>
+          </caption>
+          <caption pos="0,[0,-0,-0">
+            <check pos="25,35" class="cls_text_bottom" checked="1">宝贝管家</check>
+            <check pos="[35,35" class="cls_text_bottom" checked="1">59游戏盒</check>
+            <check pos="[35,35" class="cls_text_bottom" checked="1">天音酷播</check>
+            <check pos="[35,35" class="cls_text_bottom" checked="1">2345网址导航</check>
+            <check pos="[35,35" class="cls_text_bottom" checked="1">传奇霸业</check>
+            <imgbtn name="btn_close" skin="skin_install_finish"   pos="200,90" />
+            <imgbtn name="btn_tiyan" skin="skin_tiyan_button"   pos="[10,90" />
+          </caption>
+        </page>
+      </tabctrl>
+
+    </caption>
+    
+  </root>
 </SOUI>

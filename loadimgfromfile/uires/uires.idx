@@ -1,0 +1,14 @@
+﻿<resource>
+  <UIDEF>
+    <file name="XML_INIT" path="xml\init.xml"  />
+  </UIDEF>
+  <LAYOUT>
+    <file name="XML_MAINWND" path="xml\dlg_main.xml"  />
+    <file name="img_bg" path="image\1.png" />
+  </LAYOUT>
+  <IMG>
+  </IMG>
+  <ICON>
+    <file name="ICON_LOGO"  path="image\soui.ico"    />
+  </ICON>
+</resource>
